@@ -16,8 +16,13 @@
             data() {
                 return {
                     message: 'hello vue'
-                }
-            }
+                };
+            },
+            methods: {
+                changeMessage() {
+                    this.message = 'changed';
+                },
+            },
         });
 
         app.mount('#app');
